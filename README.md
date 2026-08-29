@@ -46,6 +46,25 @@ Provides detailed analysis for a selected category, including sales, transaction
 - Drill-down and drill-through functionality
 - Power BI bookmarks
 
+## Data Preparation
 
+The Excel dataset was prepared before importing it into Power BI.
 
-Retail Store Sales Analysis Project
+The data preparation process included:
+
+- Reviewing the dataset structure and columns
+- Checking for missing/null values
+- Verifying and correcting data types
+- Ensuring Transaction Date was stored as a proper date
+- Checking the consistency of the dataset
+- Using the cleaned dataset as the source for the Power BI report
+
+## Data Modeling
+
+The prepared Excel data was imported into Power BI and modeled using:
+
+- A `Cleaned_Data` table for the sales transactions
+- A `Dim_Date` table for date-based analysis
+- A relationship between the transaction data and date table
+- DAX measures for sales, transactions, quantity, customers, and other KPIs
+
